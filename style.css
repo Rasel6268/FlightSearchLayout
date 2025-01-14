@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --background: #ffffff;
+    --container-color: #4647A0;
+    --price-font: 50px;
+    --font-family: "DM Sans", serif;
+    --container-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6rem 5rem 26rem;
+    grid-template-areas:
+        "column1 column1 column1 column1 column2 column2"
+        "column3 column3 column3 column3 column5 column5"
+        "column4 column4 column4 column4 column5 column5";
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.grid-template {
+    display: grid;
+    gap: 10px;
+}
+
+.grid-template-element {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: var(--container-shadow);
+}
+
+/* Apply colors to specific elements */
+.Flight-tab,
+.Best {
+    background-color: var(--container-color);
+    color: #fff;
+}
+
+.user-content,
+.Cheapest,
+.Fastest,
+.FlyGreener,
+.Flight,
+.Filter {
+    background-color: var(--background);
+    color: #000;
+}
+
+/* Grid area assignments */
+.column-1 {
+    grid-area: column1;
+}
+
+.column-2 {
+    grid-area: column2;
+}
+
+.column-3 {
+    grid-area: column3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+    gap: 0.5rem;
+    font-weight: 600
+}
+
+.column-4 {
+    grid-area: column4;
+    grid-template-rows: 9.5rem;
+    margin-top: 25px;
+    
+}
+
+.column-5 {
+    grid-area: column5;
+    margin-top: 20px;
+   
+}
+.Flight-tab {
+    background-color: var(--container-color);
+    box-shadow: var(--container-shadow);
+    padding: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    align-items: center; 
+    padding-bottom: 20px;
+}
+
+/* Booking Bar Info */
+.booking-bar__info {
+    flex: 1; /* Makes the info section take available space */
+}
+
+.booking-bar__heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.booking-bar__sub-heading {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Booking Bar Inputs */
+.booking-bar__inputs {
+    display: flex;
+    gap: 1rem; 
+}
+
+.icon-input {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: var(--container-shadow);
+    flex: 1; /* Ensures both inputs take equal width */
+    max-width: 300px; /* Optional: Limit the maximum width of inputs */
+}
+
+.icon-input__icon {
+    margin-right: 0.5rem;
+    color: #4647A0; /* Icon color */
+    font-size: 1.2rem;
+}
+
+.icon-input input {
+    flex: 1; /* Expands input to take available space */
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    background-color: transparent;
+}
+
+.icon-input input::placeholder {
+    color: #aaa;
+}
+.top-flight-card{
+    display: flex;
+    justify-content: center;
+    color: var(--container-color);
+    padding: 10px;
+    gap: .5rem;
+}
+.styled-price{
+    font-size: 30px;
+    font-weight: 900;
+}
+.top-flight-card__heading{
+ font-size: 15px;
+}
+.top-flight-card__sub-heading{
+    font-size: 10px;
+}
+.color{
+    color: #ffffff;
+}
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+   
+    
+}
+
+/* Avatar */
+.avater img {
+    height: 80px;
+    width: 80px;
+
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #4647A0; /* Adds a border matching the theme */
+    object-fit: cover; /* Ensures the image scales properly */
+}
+
+/* User Name */
+.user-name {
+    display: flex;
+    flex-direction: column; /* Stacks text vertically */
+    justify-content: center;
+    
+}
+
+.user-name p:first-child {
+    font-size: 1rem;
+    color: #666; /* Subtle greeting text */
+    margin: 0; /* Removes default margin */
+}
+
+.user-name p:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4647A0; /* Theme-matching color */
+    margin: 0; /* Removes default margin */
+}
