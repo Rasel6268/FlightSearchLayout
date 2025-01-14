@@ -1,141 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Search</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
 </head>
-<body>
-    <main class="grid-container">
-        <div class="grid-template column-1">
-            <div class="grid-template-element Flight-tab">
-                <div class="booking-bar__info">
-                    <h2 class="booking-bar__heading">Barcelona (BCN) - Rome (ROM)</h2>
-                    <p class="booking-bar__sub-heading">1 adult - Economy</p>
-                </div>
-                <div class="booking-bar__inputs">
-                    <div class="icon-input">
-                        <i class="icon-input__icon far fa-calendar-alt"></i>
-                        <input type="text" placeholder="Departure Date" readonly value="Thursday, April 2" spellcheck="false">
-                    </div>
-                    <div class="icon-input">
-                        <i class="icon-input__icon far fa-calendar-alt"></i>
-                        <input type="text" readonly placeholder="Return Date" spellcheck="false">
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="grid-template column-2">
-            <div class="grid-template-element user-content">
-                <div class="user-container">
-                    <div class="avater">
-                        <img src="avater.jpg" alt="">
-                    </div>
-                    <div class="user-name">
-                        <p>Hello !!</p>
-                        <p>MD Rasel</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grid-template column-3">
-            <div class="grid-template-element Cheapest">
-                <div class="top-flight-card">
-                    <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
-                    <div class="top-flight-card__info">
-                      <p class="top-flight-card__heading">Cheapest</p>
-                      <p class="top-flight-card__sub-heading">2h 37m average</p>
-                    </div>
-                    
-                  </div>
-            </div>
-            <div class="grid-template-element Best">
-                <div class="top-flight-card color">
-                    <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
-                    <div class="top-flight-card__info">
-                      <p class="top-flight-card__heading">Best</p>
-                      <p class="top-flight-card__sub-heading">2h 37m average</p>
-                    </div>
-                    
-                  </div>
-            </div>
-            <div class="grid-template-element Fastest">
-                <div class="top-flight-card">
-                    <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
-                    <div class="top-flight-card__info">
-                      <p class="top-flight-card__heading">Fastest</p>
-                      <p class="top-flight-card__sub-heading">2h 37m average</p>
-                    </div>
-                    
-                  </div>
-            </div>
-            <div class="grid-template-element FlyGreener">
-                <div class="top-flight-card">
-                    <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
-                    <div class="top-flight-card__info">
-                      <p class="top-flight-card__heading">Greener</p>
-                      <p class="top-flight-card__sub-heading">2h 37m average</p>
-                    </div>
-                    
-                  </div>
-            </div>
-        </div>
-        <div class="grid-template column-4">
-            <div class="grid-template-element Flight">
-                <article class="flight-card flights-list__item">
-                    <div class="flight-card__airlines">
-                      <div class="flight-card__airline">
-                        <img src="//unsplash.it/30/30" alt="">
-                      </div>
-                      <!-- /.flight-card__airline -->
-                      <div class="flight-card__airline">
-                        <img src="//unsplash.it/30/30" alt="">
-                      </div>
-                      <!-- /.flight-card__airline -->
-                    </div>
-                    <!-- /.flight-card__airlines -->
-                    <div class="flight-card__departure">
-                      <time class="flight-card__time">10:30 AM</time>
-                      <h2 class="flight-card__city">Barcelona</h2>
-                      <time class="flight-card__day">Tuesday, Apr 21, 2020</time>
-                    </div>
-                    <!-- /.flight-card__departure -->
-                    <div class="flight-card__route">
-                      <p class="flight-card__duration">1hr 50m</p>
-                      <div class="flight-card__route-line route-line" aria-hidden="true">
-                        <div class="route-line__stop route-line__start" aria-hidden="true"></div>
-                        <!-- /.route-line__start -->
-                        <div class="route-line__stop route-line__end" aria-hidden="true"></div>
-                        <!-- /.route-line__start -->
-                      </div>
-                      <!-- flight-card__route-line -->
-                      <p class="flight-card__type">Non-stop</p>
-                    </div>
-                    <div class="flight-card__arrival">
-                      <time class="flight-card__time">10:30 AM</time>
-                      <h2 class="flight-card__city">Rome</h2>
-                      <time class="flight-card__day">Tuesday, Apr 21, 2020</time>
-                    </div>
-                    <!-- /.flight-card__arrival -->
-                    <div class="flight-card__action">
-                      <p class="flight-card__price styled-price"><sup>$</sup>93<sub>USD</sub></p>
-                      <button class="flight-card__cta button button--orange">Select</button>
-                    </div>
-                    <!-- /.flight-card__action -->
-                  </article>
 
-            </div>
+<body>
+  <main class="grid-container">
+    <div class="grid-template column-1">
+      <div class="grid-template-element Flight-tab">
+        <div class="booking-bar__info">
+          <h2 class="booking-bar__heading">Barcelona (BCN) - Rome (ROM)</h2>
+          <p class="booking-bar__sub-heading">1 adult - Economy</p>
         </div>
-        <div class="grid-template column-5">
-            <div class="grid-template-element Filter">Filter</div>
+        <div class="booking-bar__inputs">
+          <div class="icon-input">
+            <i class="icon-input__icon far fa-calendar-alt"></i>
+            <input type="text" placeholder="Departure Date" readonly value="Thursday, April 2" spellcheck="false">
+          </div>
+          <div class="icon-input">
+            <i class="icon-input__icon far fa-calendar-alt"></i>
+            <input type="text" readonly placeholder="Return Date" spellcheck="false">
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
+
+
+    <div class="grid-template column-2">
+      <div class="grid-template-element user-content">
+        <div class="user-container">
+          <div class="avater">
+            <img src="avater.jpg" alt="">
+          </div>
+          <div class="user-name">
+            <p>Hello !!</p>
+            <p>MD Rasel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-template column-3">
+      <div class="grid-template-element Cheapest">
+        <div class="top-flight-card">
+          <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
+          <div class="top-flight-card__info">
+            <p class="top-flight-card__heading">Cheapest</p>
+            <p class="top-flight-card__sub-heading">2h 37m average</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="grid-template-element Best">
+        <div class="top-flight-card color">
+          <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
+          <div class="top-flight-card__info">
+            <p class="top-flight-card__heading">Best</p>
+            <p class="top-flight-card__sub-heading">2h 37m average</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="grid-template-element Fastest">
+        <div class="top-flight-card">
+          <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
+          <div class="top-flight-card__info">
+            <p class="top-flight-card__heading">Fastest</p>
+            <p class="top-flight-card__sub-heading">2h 37m average</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="grid-template-element FlyGreener">
+        <div class="top-flight-card">
+          <p class="top-flight-card__price styled-price"><sup>$</sup>34</p>
+          <div class="top-flight-card__info">
+            <p class="top-flight-card__heading">Greener</p>
+            <p class="top-flight-card__sub-heading">2h 37m average</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="grid-template column-4">
+      <div class="grid-template-element Flight">
+         <div class="flight-card__airline">
+            <img src="Biman-Bangladesh-Airlines-Logo.png" alt="">
+          </div>
+          <div class="flight-card__departure">
+          <time class="flight-card__time">10:30 AM</time>
+          <h2 class="flight-card__city">Barcelona</h2>
+          <time class="flight-card__day">Tuesday, Apr 21, 2020</time>
+        </div>
+        <!-- /.flight-card__departure -->
+        <div class="flight-card__route">
+          <p class="flight-card__duration">1hr 50m</p>
+          <div class="flight-card__route-line route-line" aria-hidden="true">
+            <img src="depositphotos_613368558-stock-illustration-airplane-line-dotted-path-plane-removebg-preview.png"">
+          </div>
+          <!-- flight-card__route-line -->
+          <p class="flight-card__type">Non-stop</p>
+        </div>
+        <div class="flight-card__arrival">
+          <time class="flight-card__time">10:30 AM</time>
+          <h2 class="flight-card__city">Rome</h2>
+          <time class="flight-card__day">Tuesday, Apr 21, 2020</time>
+        </div>
+        <!-- /.flight-card__arrival -->
+        <div class="flight-card__action">
+          <p class="flight-card__price styled-price"><span>&#2547;</span>30000</p>
+          <div>
+            <button class="flight-card__cta button button--orange">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-template column-5">
+      <div class="grid-template-element Filter">Filter</div>
+    </div>
+  </main>
 </body>
+
 </html>
